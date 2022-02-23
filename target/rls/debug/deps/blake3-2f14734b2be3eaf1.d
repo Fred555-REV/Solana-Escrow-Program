@@ -1,0 +1,14 @@
+/home/fred/Documents/solana-bpf-program-template/target/rls/debug/deps/blake3-2f14734b2be3eaf1.rmeta: /home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/lib.rs /home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/guts.rs /home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/platform.rs /home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/ffi_avx2.rs /home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/ffi_avx512.rs /home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/portable.rs /home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/ffi_sse2.rs /home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/ffi_sse41.rs /home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/traits.rs /home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/join.rs
+
+/home/fred/Documents/solana-bpf-program-template/target/rls/debug/deps/blake3-2f14734b2be3eaf1.d: /home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/lib.rs /home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/guts.rs /home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/platform.rs /home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/ffi_avx2.rs /home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/ffi_avx512.rs /home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/portable.rs /home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/ffi_sse2.rs /home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/ffi_sse41.rs /home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/traits.rs /home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/join.rs
+
+/home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/lib.rs:
+/home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/guts.rs:
+/home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/platform.rs:
+/home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/ffi_avx2.rs:
+/home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/ffi_avx512.rs:
+/home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/portable.rs:
+/home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/ffi_sse2.rs:
+/home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/ffi_sse41.rs:
+/home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/traits.rs:
+/home/fred/.cargo/registry/src/github.com-1ecc6299db9ec823/blake3-1.3.1/src/join.rs:
