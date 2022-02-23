@@ -13,17 +13,12 @@ all calls go through the function declared as entrypoint
 *macros are a way of writing code that writes other code(println!)
 
 */
-//macro vvv
 entrypoint!(process_instruction);
-//function vvv
 fn process_instruction(
-    //parameters vvv
     program_id: &Pubkey,
     accounts: &[AccountInfo],
     instruction_data: &[u8],
-    //return type vvv
 ) -> ProgramResult {
-    //code block with macro vvv
     msg!(
         "process_instruction: {}: {} accounts, data={:?}",
         program_id,
