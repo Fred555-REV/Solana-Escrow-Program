@@ -13,18 +13,15 @@ all calls go through the function declared as entrypoint
 *macros are a way of writing code that writes other code(println!)
 
 */
+use crate::processor::Processor;
+
 entrypoint!(process_instruction);
 fn process_instruction(
     program_id: &Pubkey,
     accounts: &[AccountInfo],
     instruction_data: &[u8],
 ) -> ProgramResult {
-    msg!(
-        "process_instruction: {}: {} accounts, data={:?}",
-        program_id,
-        accounts.len(),
-        instruction_data
-    );
+    Processor::process(program_id, accounts, instruction_data);
 /*
 the return value of a function is synonymous with the value
 of the final expression in the block of the body of a function
