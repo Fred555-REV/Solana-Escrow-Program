@@ -1,15 +1,15 @@
 use solana_program::{
-    account_info::{next_account_info,AccountInfo},
+    account_info::{next_account_info, AccountInfo},
     entrypoint::ProgramResult,
     program_error::ProgramError,
     msg,
     pubkey::Pubkey,
     program_pack::{Pack, IsInitialized},
-    sysvar::{rent::Rent,Sysvar},
+    sysvar::{rent::Rent, Sysvar},
     program::invoke
 };
 
-use crate::{instruction::EscrowInstruction, error::EscrowError, state::Escrow};
+use crate::{instruction::EscrowInstruction, error::EscrowError::NotRentExempt, state::Escrow};
 
 /*
 A STRUCT, or structure is a custom data type that lets you name 
@@ -51,8 +51,8 @@ impl Processor {
         let escrow_account = next_account_info(account_info_iter)?;
         let rent = &Rent::from_account_info(next_account_info(account_info_iter)?)?;
 
-        if rent.is_exempt(escrow_account.lamports(), escrow_account.data_len()) {
-            return Err(EscrowError::NotRentExempt.into());
+        if !rent.is_exempt(escrow_account.lamports(), escrow_account.data_len()) {
+            return Err(NotRentExempt.into());
         }
         let mut escrow_info = Escrow::unpack_unchecked(&escrow_account.try_borrow_data()?)?;
         if escrow_info.is_initialized() {
@@ -85,7 +85,7 @@ impl Processor {
                 initializer.clone(),
                 token_program.clone(),
             ],
-        )?; 
+        )?;
 
         Ok(())
     }

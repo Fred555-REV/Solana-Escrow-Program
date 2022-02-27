@@ -1,5 +1,5 @@
-use std::convert::TryInto;
 use solana_program::program_error::ProgramError;
+use std::convert::TryInto;
 
 use crate::error::EscrowError::InvalidInstruction;
 
@@ -23,7 +23,7 @@ Accounts expected:
     InitEscrow {
         //The amount party A expects to recieve of Token Y
         amount: u64
-    }
+    },
 }
 impl EscrowInstruction {
     pub fn unpack(input: &[u8]) -> Result<Self,ProgramError> {
